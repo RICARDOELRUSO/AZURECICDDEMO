@@ -7,13 +7,15 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
-
+  name: 'CICDDemo'
+  agent: 'CP-ricar-BQR6U'
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: UiPathTest@6
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'CICDDemoConnection'
+    testProjectPath: 'project.json'
+    folderName: 'AZURECICDTESTING'
+    testReportDestination: 'result.json'
+    traceLevel: 'Information'
