@@ -42,17 +42,11 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "3aad9882-c415-40bc-a727-03e8aae9bca9",
-        "testCaseType": "TestCase",
-        "fileName": "TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "f9ca4c40-f252-4e29-ad1a-04aa918c6142",
+        "editingStatus": "Publishable",
+        "testCaseId": "a90c0197-fc2b-406f-b69d-6690c9925ef1",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC_DEMO.xaml"
+        "fileName": "TC_DEMO02.xaml"
       }
     ],
     "saveToCloud": false
